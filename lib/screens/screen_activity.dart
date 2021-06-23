@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:socialnetwork_flutter/components/post/activity_build.dart';
 import 'package:socialnetwork_flutter/model/feedItem.dart';
 
-import '../home_page.dart';
+import '../pages/home_page.dart';
 
 class ScreenActivity extends StatefulWidget{
   @override

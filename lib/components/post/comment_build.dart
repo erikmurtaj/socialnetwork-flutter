@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:socialnetwork_flutter/home_page.dart';
+import 'package:socialnetwork_flutter/pages/home_page.dart';
 import 'package:socialnetwork_flutter/model/comment.dart';
 import 'package:socialnetwork_flutter/model/user.dart';
 import 'package:timeago/timeago.dart' as timeago;

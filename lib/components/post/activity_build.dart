@@ -2,18 +2,18 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:socialnetwork_flutter/home_page.dart';
+import 'package:socialnetwork_flutter/pages/home_page.dart';
 import 'package:socialnetwork_flutter/model/comment.dart';
 import 'package:socialnetwork_flutter/model/feedItem.dart';
 import 'package:socialnetwork_flutter/model/post.dart';
-import 'package:socialnetwork_flutter/post_view.dart';
-import 'package:socialnetwork_flutter/screens/profile_screen.dart';
+import 'package:socialnetwork_flutter/components/post/post_view.dart';
+import 'package:socialnetwork_flutter/screens/screen_profile.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
 class ActivityBuild extends StatelessWidget{
   final FeedItem feed;
   Widget mediaPreview;
-  String activityText;
+  String activityText = "";
 
   ActivityBuild({this.feed});
 
@@ -30,7 +30,7 @@ class ActivityBuild extends StatelessWidget{
             title: GestureDetector(
               onTap: () {Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ProfileScreen(profileId: feed.userId,)),
+                MaterialPageRoute(builder: (context) => ScreenProfile(profileId: feed.userId,)),
               );},
               child: RichText(
                 overflow: TextOverflow.ellipsis,

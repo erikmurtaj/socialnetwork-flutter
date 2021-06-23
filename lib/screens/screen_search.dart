@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:socialnetwork_flutter/model/user.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:socialnetwork_flutter/screens/profile_screen.dart';
+import 'package:socialnetwork_flutter/screens/screen_profile.dart';
 
-import '../home_page.dart';
+import '../pages/home_page.dart';
 
 class ScreenSearch extends StatefulWidget {
   @override
@@ -122,7 +122,7 @@ class UserResult extends StatelessWidget{
 
   profileView(BuildContext context, String user_id){
     Navigator.push(context, MaterialPageRoute(builder: (context) =>
-        ProfileScreen(profileId: user_id,)));
+        ScreenProfile(profileId: user_id,)));
   }
 
   @override
@@ -132,7 +132,6 @@ class UserResult extends StatelessWidget{
       child: Column(
         children: <Widget>[
           GestureDetector(
-            //TODO: profile page
             onTap: () => profileView(context, user.id),
             child: ListTile(
               leading: CircleAvatar(

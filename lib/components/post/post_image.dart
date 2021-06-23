@@ -6,7 +6,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:socialnetwork_flutter/model/post.dart';
 import 'package:socialnetwork_flutter/model/user.dart';
-import '../../home_page.dart';
+import '../../pages/home_page.dart';
 
 class PostImage<Post> extends StatelessWidget {
   final post;

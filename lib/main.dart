@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:socialnetwork_flutter/authentication_service.dart';
+import 'package:socialnetwork_flutter/authentication/authentication_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:socialnetwork_flutter/sign_in_page.dart';
+import 'package:socialnetwork_flutter/pages/sign_in_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import 'home_page.dart';
+import 'pages/home_page.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  /*
+  /***
     Initializing the Firebase App: this needs to be done before you use any
       kind of Firebase service
-   */
+   ***/
   await Firebase.initializeApp();
   runApp(MyApp());
 }
@@ -58,7 +58,7 @@ class AuthenticationWrapper extends StatelessWidget{
       //AuthenticationService auth = new AuthenticationService(FirebaseAuth.instance);
       //auth.signOut();
       print(firebaseUser.uid);
-      return Home(firebaseUser.uid);
+      return new Home(firebaseUser.uid);
     }
     return SignInPage();
   }

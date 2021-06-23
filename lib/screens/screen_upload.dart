@@ -9,7 +9,7 @@ import 'package:image/image.dart' as Im;
 import 'package:uuid/uuid.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:geolocator/geolocator.dart';
-import '../home_page.dart';
+import '../pages/home_page.dart';
 import 'package:flutter/services.dart';
 
 class ScreenUpload extends StatefulWidget {
