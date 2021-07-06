@@ -11,7 +11,6 @@ import 'package:socialnetwork_flutter/screens/screen_upload.dart';
 
 import '../model/user.dart';
 
-//TODO: final usersRef to the users's collection
 final DateTime timestamp = DateTime.now();
 final storageRef = FirebaseStorage.instance.ref();
 // Create a CollectionReference called users that references the firestore collection
