@@ -15,8 +15,8 @@ Aims:
 3. Evaluation and use of the Firebase platform (such as Cloud and DataBase for data persistence)
 4. Development of a working mobile application that uses the proposed technologies
 
-In order to evaluate the use of these technologies, the idea is to develop a Social Network where users can interact with videos shared by other users.
-Since the architecture of the application are very complex, I plan to create a stable application with basic functionality, which can be extended outside the Thesis for future developments.
+In order to evaluate the use of these technologies, the idea is to develop a Social Network where users can interact with photos shared by other users.
+Since the architecture of the application are very complex, the project is to create a stable application with basic functionality, which can be extended outside the Thesis for future developments.
 
 The focus of this thesis is to evaluate the effectiveness and advantages in using the google technologies for the creation of a mobile application.
 
