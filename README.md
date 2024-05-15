@@ -20,6 +20,21 @@ Since the architecture of the application are very complex, the project is to cr
 
 The focus of this thesis is to evaluate the effectiveness and advantages in using the google technologies for the creation of a mobile application.
 
+The application allows users to:
+- Register
+- Log-in
+- Look at the Home Page (feed of the following users)
+- Post an image
+- Comment a post
+- Like a post
+- Search for other users
+
+Examples of the running App:
+
+![flutter_screeenshot1](https://github.com/erikmurtaj/socialnetwork-flutter/assets/50946517/a2d0f545-46e5-4213-893f-ba1b9bfc0d86)
+![flutter_screeenshot2](https://github.com/erikmurtaj/socialnetwork-flutter/assets/50946517/c349f001-3f8e-4f7f-8830-6f1cc4d96b40)
+
+
 ## Getting Started
 
 To run this project you need to install Android Studio and an updated version of [Gradle](https://github.com/gradle/gradle/blob/master/README.md).
